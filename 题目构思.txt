@@ -1,0 +1,98 @@
+
+1. 基于MATLAB的人体上肢肌肉骨骼几何形态表征
+研究目标：
+在MATLAB中，实现：
+1.  依据文献中公开的数据集和方法，建立表征手臂主要骨骼、肌肉和自由度的肌骨模型(Musculoskeletal Model)；
+2.  在GUIDE中完成肩关节屈伸、内旋、外旋、上举，肘部屈曲、前臂旋转等关节自由度的运动学仿真，并分析运动过程中肌肉几何形态变化特征。
+主要研究内容和方法
+肌肉骨骼建模(Musculoskeletal Modeling)是利用解剖学、力学、几何学、多体动力学的知识，量化人体运动过程中肌肉力学和生理学特性的一种研究方法，其研究结果可应用于康复评定、康复机器人构型设计、电机选型等方面。本课题基于文献中公开的数据集和方法，在MATLAB中建立上肢的骨骼肌肉几何学模型，并仿真分析上肢的主要关节自由度。主要研究内容可分为：1、文献检索、查阅和收集资料，全面了解肌肉骨骼建模的研究方法及其现状。2、掌握通过MATLAB编程，实现人体肌肉的三维几何形态表征的方法。３、学会在GUIDE中编制用户图形界面，实现上肢肌肉骨骼运动学模型展示。
+主要考核要求或指标
+1、至少实现三块以上肌肉的建模（总共７块肌肉）；
+２、至少实现两个上肢自由度（总共５个自由度；
+３、设计论文的参考文献不少于30篇，其中外文文献不少于10篇，且近三年参考文献不少于总文献数量的３0%。
+主要参考文献
+[1] 夏时洪,魏毅,王兆其.人体运动仿真综述[J].计算机研究与发展,2010,47(08): 1354-1361.
+[2] Xu TJ, Jiang ZW, Jeong JY, et al. Integrated System for Monitoring Muscular States during Elbow Flexor Resistance Training in Bedridden Patients.[J]. Journal of healthcare engineering, 2019, (1):4290957-4290957.　（重要）
+[3] Robertson D G E, Caldwell G E, Hamill J, et al. Research methods in biomechanics[M]. Humasn kinetics, 2013.
+[4] KATHERINE R. S. HOLZBAUR, WENDY M. MURRAY, and SCOTT L. DELP. A Model of the Upper Extremity for Simulating Musculoskeletal　Surgery and Analyzing Neuromuscular Control.[J]. Annals of Biomedical Engineering, 2005, 33(6):829-840.　（重要）
+[5] Garner BA, Pandy MG. 1999. A kinematic model of the upper limb based on the visible human project (vhp) image dataset[J]. Computer methods in biomechanics and biomedical engineering. 2:107-124. （数据集）
+[6] Garner BA, Pandy MG. 2001. Musculoskeletal model of the upper limb based on the visible human male dataset[J]. Computer methods in biomechanics and biomedical engineering. 4:93-126. （数据集）
+[7] Garner BA, Pandy MG. 2000. The obstacle-set method for representing muscle paths in musculoskeletal models[J]. Computer methods in biomechanics and biomedical engineering. 3:1-30. （肌肉线条仿真方法）
+
+
+2. 基于深度学习的上肢肌肉CT图像自动分割技术
+研究目标：
+1、根据人体上肢的解剖学描述，获取深度学习训练集和验证集；
+2、了解深度学习框架，学习如何搭建深度学习神经网络；
+3、采用所得到的训练集和验证集进行训练，用训练好的模型在测试集上进行测试，并对结果进行分析。
+主要研究内容和方法：
+肌肉横截面积是肌肉功能评价的一个非常重要的指标。但人体肌肉众多，且肌肉形态不规则、边界不明显，目前肌肉分割仍然采用手动分割的形式。但手动分割速度慢且分割结果受患者个人主观判断影响，信息难免会失真。因此，本课题使用深度学习算法，研究对上肢肌肉CT图像进行自动分割的方法。
+主要研究内容分为：1、文献检索、查阅和收集资料，全面了解上肢肌肉解剖学描述，以及上肢肌肉CT影像分割的方法及研究现状；2、根据人体上肢的解剖学描述，手动识别、分割并标记上肢不同肌肉块的CT影像，获取深度学习带标签的 训练集和验证集；3、选择一种深度学习基本框架，熟悉并能掌握使用（优先推荐使用U-Net 网络）；4、使用获得的学习训练集训练神经网络，用验证集验证和测试训练所得的神经网络。
+主要考核要求或指标
+1、建立上肢肌肉块自动识别和分割系统，要求识别准确率在90%及以上。
+2、设计论文的参考文献不少于30篇，其中外文文献不少于10篇，且近三年参考文献不少于总文献数量的50%。
+主要参考文献
+[1] 游齐靖, 万程. 基于深度学习的医学图像分割方法[J]. 中国临床新医学, 2020, 013(002):115-118.
+[2] Litjens G , Kooi T , Bejnordi B E , et al. A Survey on Deep Learning in Medical Image Analysis[J]. Medical Image Analysis, 2017, 42(9):60-88.
+[3] Ronneberger O , Fischer P , Brox T . U-Net: Convolutional Networks for Biomedical Image Segmentation[C]// International Conference on Medical Image Computing and Computer-Assisted Intervention. Springer, Cham, 2015.
+[4] 张石, 董建威, 佘黎煌. 医学图像分割算法的评价方法[J]. 中国图象图形学报, 2009, 14(9):1872-1880.
+
+3. 一种用于居家老龄人康复训练的粘弹性阻尼带设计与测试
+研究目标：
+1、设计一种适用于老龄人居家康复训练的弹性阻尼带，通过力传感器测量记录粘弹性带的阻抗力；
+2、通过结构设计优化，使阻尼带使用简单、方便，且能很好地融入进老龄人的家庭日常生活环境。
+3、获取阻尼带的力位移曲线，并确定所设计的阻尼带的推荐训练强度。
+主要研究内容和方法：
+衰老和疾病会导致肌肉消瘦和虚弱，最终限制人躯体的物理功能。 抗阻训练是一种有效的物理康复方法，常常被美国健康运动学院和美国心脏协会等国家卫生组织推荐，用于改善老年人和残疾患者的肌肉力量和身体机能。本课题主要目的是设计一种适用于老龄人居家康复训练的弹性阻尼带，并测试阻尼带的传感器性能及力位移曲线。
+主要研究内容分为：1、选择合适的力传感器，基于Arduino编程获取力传感器数据，并对力传感器经行校准；2、使用3D打印技术设计老龄人手握和组你带固定装置（设计要求：老龄人抓握方便，易于在日常生活中固定）；3、选择合适的粘弹性带，并确定粘弹性带有效部位长度；4、通过实验测试的方法确定所设计的弹性阻尼带的力位移曲线；5、根据获得的力位移曲线，将各自组你带的训练强度划分为不同等级（如低、中、高三个等级）。
+主要考核要求或指标
+1、毕业论文和粘弹性带的使用说明书各一份；
+2、设计多根阻尼带，训练强度等级至少有三个等级且不同等级划分合理；
+3、设计论文的参考文献不少于30篇，其中外文文献不少于10篇，且近三年参考文献不少于总文献数量的50%。
+主要参考文献
+[1] 陈金培,谢映宜,何志坚,陈俊锋,刘建安.阻抗训练联合有氧运动干预老年高血压患者的疗效评价[J].中国初级卫生保健,2019,33(12):51-53.
+[2] Yang J , Xu H , Liang J , et al. Monitoring the training dose and acute fatigue response during elbow flexor resistance training using a custom-made resistance band[J]. PeerJ, 2020, 8(5):e8689.
+[3] 张卉,胡华刚,徐慧会,陈子嫣.有氧联合阻抗训练对肌力4级及以上偏瘫患者运动功能和心肺功能的影响[J].中国老年保健医学,2018,16(01):8-10.
+[4] Pollock, Michael L., et al. "The recommended quantity and quality of exercise for developing and maintaining cardiorespiratory and muscular fitness, and flexibility in healthy adults." Medicine and science in sports and exercise 30.6 (1998): 975-991.
+[5] American College of Sports Medicine. "American College of Sports Medicine position stand. Progression models in resistance training for healthy adults." Medicine and science in sports and exercise 41.3 (2009): 687.
+
+4. 一种用于居家老龄人力阻抗训练的云端监测系统
+研究目标：
+1、基于树莓派（一种只有卡片大小的微型电脑）系统，设计一种能实时监测并上传老龄人阻抗训练力数据的测量系统；
+2、设计云端服务器，用于接受及远程实时监控阻抗力数据。
+主要研究内容和方法：
+最近，作为一种用于替代传统的、基于医院或康复中心训练的、新的康复训练模式，居家阻力康复训练引起了人们越来越多的关注。但是，在没有治疗师的监督或运动监测系统的帮助下，居家阻力康复训练的最大挑战之一就是理疗师可能不知道患者是否按照预定的运动处方进行了锻炼。这会造成居家康复训练过程缺乏客观的测量，限制了理疗师评估运动干预效果并选择合适训练剂量的能力。基于此，本课题主要目的是设计一种基于树莓派的老龄人居家康复训练云端监测系统，通过实验测试监测系统的功能实现。
+主要研究内容分为：1、基于树莓派的力数据的实时测量系统设计，首先将 Linux 操作系统安装在在树莓派中，通过Python 语言编程实现对数据的采集和云端上传；2、通过树莓派自带的串口功能，将采集的数据上传至云端服务器；3、建立云端服务器页面，用于接受、保存和显示数据。
+主要考核要求或指标
+1、测量系统和云端系统的刷新率不低于5Hz，且具有足够的可扩展性；
+2、设计论文的参考文献不少于30篇，其中外文文献不少于10篇，且近三年参考文献不少于总文献数量的30%。
+主要参考文献
+[1] 张美平,吴德平,王灿杰,谢玮铭.基于树莓派的智能家居设计与实现[J].计算机系统应用,2019,28(08):109-114.
+[2] Yang J , Xu H , Liang J , et al. Monitoring the training dose and acute fatigue response during elbow flexor resistance training using a custom-made resistance band[J]. PeerJ, 2020, 8(5):e8689.
+[3] 郝林炜,梁颖.基于树莓派+云服务器的网络监控及家居控制系统的研究与实际应用[J].物联网技术,2016,6(09):45-47+50.
+[4] 张美平,吴德平,王灿杰,谢玮铭.基于树莓派的智能家居设计与实现[J].计算机系统应用,2019,28(08):109-114.
+[5] 《Python-树莓派-采集温度并上传云端》，网址：https://blog.csdn.net/nanshashen/article/details/103978633
+
+5. 基于Open Pose的智能康复训练处方系统的设计
+研究目标：
+1、了解OpenPose 算法实现原理，并在Python中搭建Open Pose运行框架；
+2、学习Python图形界面编程，设计一种康复训练辅助系统用户界面，指导患者完成指定的康复训练动作，并智能地记录康复训练过程中的关节角度，训练次数等等；
+3、通过此系统，可以实现为患者设计合适的训练处方和计划。
+主要研究内容和方法：
+选择合适的康复训练处方（如组数和重复次数、休息时间、TUT、速度等），对于患者的身体恢复和力量适应至关重要。OpenPose 是由美国卡耐基梅隆大学的研究人员提出的一个开源框架[1,2]，可用于直接从RGB数据中获取人体的关节，并画出虚拟骨骼关节，在多人环境下表现出良好的性能和效率。且Open Pose通过摄像头拍摄照片识别人体关节，是一种非接触方式，不需要佩戴传感器，对老龄人使用非常友好。因此，本课题的主要目的是设计一种智能康复训练系统，通过此系统为老龄人设计合适的训练处方和计划。并结合具体实验测试系统的功能实现。
+主要研究内容分为：1、在Python中搭建Open Pose运行框架；2、通过Python图形界面编程，设计一种康复训练辅助系统，指导患者完成指定的康复训练动作，并智能地记录康复训练过程中的关节角度，训练次数；3、优化用户界面，使系统对于老龄人使用方便；4、实验测试系统的功能实现。
+主要考核要求或指标
+1、系统使用说明书一份；
+2、康复训练动作不少于五种，交互界面对老龄人友好，字体大小适中，能修改训练的次数、关节角度等；
+3、测量系统刷新率尽量高于5Hz（此项为加分项）；
+4、设计论文的参考文献不少于30篇，其中外文文献不少于15篇，且近三年参考文献不少于总文献数量的50%。
+主要参考文献
+[1] Cao Z, Hidalgo G, Simon T, et al. OpenPose: realtime multi-person 2D pose estimation using Part Affinity Fields[J]. arXiv preprint arXiv:1812.08008, 2018.
+[2] https://github.com/CMU-Perceptual-Computing-Lab/openpose
+[3] 周越,吴天城,张倩.基于Open Pose的手势定位方法的研究[J].电子世界,2019(22):79-80.
+[4] 朱建宝,许志龙,孙玉玮,马青山.基于OpenPose人体姿态识别的变电站危险行为检测[J].自动化与仪表,2020,35(02):47-51.
+[5] Thiebaud, Robert S., Merrill D. Funk, and Takashi Abe. "Home‐based resistance training for older adults: a systematic review." Geriatrics & gerontology international 14.4 (2014): 750-757.
+[6] Kraemer, William J., and Nicholas A. Ratamess. "Fundamentals of resistance training: progression and exercise prescription." Medicine & Science in Sports & Exercise 36.4 (2004): 674-688.
+
+
+
